@@ -1,5 +1,5 @@
 FROM registry-ice.ng.bluemix.net/ibmliberty:latest
-ADD liberty-HelloWorld.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
+COPY liberty-HelloWorld.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
 ENV LICENSE accept
 EXPOSE 9080
 # Run Liberty via the supervisor
